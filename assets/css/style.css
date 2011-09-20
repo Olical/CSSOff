@@ -1,3 +1,17 @@
+/* Navigation */
+nav li {
+	float: left;
+}
+
+nav li a {
+	padding: 10px;
+	background-color: #CCCCCC;
+}
+
+nav li a:hover {
+	background-color: #AAAAAA;
+}
+
 /* Fonts */
 @font-face {
 	font-family: 'KomikaTitleRegular';
