@@ -98,25 +98,9 @@ header h1 {
 
 /* Fonts */
 @font-face {
-	font-family: 'KomikaTitleRegular';
-	src: url('../fonts/komika-title/KomikaTitle-webfont.eot');
-	src: url('../fonts/komika-title/KomikaTitle-webfont.eot?#iefix') format('embedded-opentype'), url('../fonts/komika-title/KomikaTitle-webfont.ttf') format('truetype');
-	font-weight: normal;
-	font-style: normal;
-}
-
-@font-face {
-	font-family: 'DigitaldreamRegular';
-	src: url('../fonts/digital-dream/DIGITALDREAM-webfont.eot');
-	src: url('../fonts/digital-dream/DIGITALDREAM-webfont.eot?#iefix') format('embedded-opentype'), url('../fonts/digital-dream/DIGITALDREAM-webfont.ttf') format('truetype');
-	font-weight: normal;
-	font-style: normal;
-}
-
-@font-face {
-	font-family: 'OpenSansRegular';
-	src: url('../fonts/open-sans/OpenSans-Regular-webfont.eot');
-	src: url('../fonts/open-sans/OpenSans-Regular-webfont.eot?#iefix') format('embedded-opentype'), url('../fonts/open-sans/OpenSans-Regular-webfont.ttf') format('truetype');
+	font-family: 'KomikaTitle-PaintRegular';
+	src: url('../fonts/open-sans/KomikaTitle-Paint-webfont.eot');
+	src: url('../fonts/open-sans/KomikaTitle-Paint-webfont.eot?#iefix') format('embedded-opentype'), url('../fonts/open-sans/KomikaTitle-Paint-webfont.ttf') format('truetype');
 	font-weight: normal;
 	font-style: normal;
 }
