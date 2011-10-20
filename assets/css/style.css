@@ -104,6 +104,7 @@ header h2 {
 	color: #FE6537;
 	margin-top: 39px;
 	text-transform: uppercase;
+	letter-spacing: 2pt;
 	
 	text-shadow: 3px 3px 0px #F2F2F2;
 	filter: dropshadow(color=#F2F2F2, offx=3, offy=3);
