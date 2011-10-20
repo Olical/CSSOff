@@ -52,6 +52,11 @@ nav a {
 	vertical-align: middle;
 }
 
+/* Header */
+header {
+	padding-top: 72px;
+}
+
 /* Backgrounds */
 .background {
 	background-repeat: repeat;
