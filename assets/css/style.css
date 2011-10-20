@@ -1,13 +1,55 @@
+/* Typeography */
+p, a {
+	font-family: 'OpenSansSemiBold', sans-serif;
+	color: #FFFFFF;
+	font-size: 22px;
+	line-height: 24px;
+	text-decoration: none;
+}
+
+a:hover {
+	color: #FFFFFF;
+	text-decoration: underline;
+}
+
+strong {
+	font-weight: bold;
+}
+
+em {
+	font-style: italic;
+}
+
 /* Navigation */
 nav {
 	width: 100%;
 	background-color: #0F2830;
+	position: fixed;
+	left: 0;
+	top: 0;
+	text-align: center;
 	
 	-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=5)";
 	filter: alpha(opacity=5);
 	-moz-opacity: 0.05;
 	-khtml-opacity: 0.05;
 	opacity: 0.05;
+}
+
+nav ul {
+	margin: 0;
+}
+
+nav li {
+	display: inline;
+	padding: 0 27px;
+}
+
+nav a {
+	line-height: 32px;
+	text-transform: uppercase;
+	font-size: 18px;
+	vertical-align: middle;
 }
 
 /* Backgrounds */
@@ -49,6 +91,14 @@ nav {
 	font-family: 'OpenSansRegular';
 	src: url('../fonts/open-sans/OpenSans-Regular-webfont.eot');
 	src: url('../fonts/open-sans/OpenSans-Regular-webfont.eot?#iefix') format('embedded-opentype'), url('../fonts/open-sans/OpenSans-Regular-webfont.ttf') format('truetype');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'OpenSansSemibold';
+	src: url('../fonts/open-sans/OpenSans-Semibold-webfont.eot');
+	src: url('../fonts/open-sans/OpenSans-Semibold-webfont.eot?#iefix') format('embedded-opentype'), url('../fonts/open-sans/OpenSans-Semibold-webfont.ttf') format('truetype');
 	font-weight: normal;
 	font-style: normal;
 }
