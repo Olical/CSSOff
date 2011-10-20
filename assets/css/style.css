@@ -23,17 +23,19 @@ em {
 /* Navigation */
 nav {
 	width: 100%;
-	background-color: #0F2830;
 	position: fixed;
 	left: 0;
 	top: 0;
 	text-align: center;
-	
-	-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=5)";
-	filter: alpha(opacity=5);
-	-moz-opacity: 0.05;
-	-khtml-opacity: 0.05;
-	opacity: 0.05;
+	z-index: 100;
+}
+
+nav div.background {
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
 }
 
 nav ul {
@@ -73,6 +75,16 @@ header {
 
 .green.background {
 	background: #80B238 url('../images/textures/green.png');
+}
+
+.transparent.background {
+	background-color: #0F2830;
+	
+	-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=5)";
+	filter: alpha(opacity=5);
+	-moz-opacity: 0.05;
+	-khtml-opacity: 0.05;
+	opacity: 0.05;
 }
 
 /* Fonts */
