@@ -1,8 +1,8 @@
 /* Fonts */
 @font-face {
 	font-family: 'KomikaTitle-PaintRegular';
-	src: url('../fonts/open-sans/KomikaTitle-Paint-webfont.eot');
-	src: url('../fonts/open-sans/KomikaTitle-Paint-webfont.eot?#iefix') format('embedded-opentype'), url('../fonts/open-sans/KomikaTitle-Paint-webfont.ttf') format('truetype');
+	src: url('../fonts/komika-title/KomikaTitle-Paint-webfont.eot');
+	src: url('../fonts/komika-title/KomikaTitle-Paint-webfont.eot?#iefix') format('embedded-opentype'), url('../fonts/komika-title/KomikaTitle-Paint-webfont.ttf') format('truetype');
 	font-weight: normal;
 	font-style: normal;
 }
@@ -74,6 +74,7 @@ nav a {
 /* Header */
 header {
 	padding-top: 72px;
+	text-align: center;
 }
 
 header h1 {
@@ -83,6 +84,17 @@ header h1 {
 	padding-top: 426px;
 	background: transparent url('../images/logo.png') no-repeat top left;
 	margin: 0 auto;
+}
+
+header h2 {
+	font-family: 'KomikaTitle-PaintRegular', sans-serif;
+	font-size: 52px;
+	line-height: 52px;
+	color: #FE6537;
+	margin-top: 39px;
+	
+	text-shadow: 3px 3px 0px #F2F2F2;
+	filter: dropshadow(color=#F2F2F2, offx=3, offy=3);
 }
 
 /* Backgrounds */
