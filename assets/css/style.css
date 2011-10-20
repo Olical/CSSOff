@@ -98,6 +98,13 @@ header h2 {
 	filter: dropshadow(color=#F2F2F2, offx=3, offy=3);
 }
 
+header p {
+	font-size: 22px;
+	line-height: 24px;
+	padding-bottom: 80px;
+	padding-top: 10px;
+}
+
 /* Backgrounds */
 .background {
 	background-repeat: repeat;
