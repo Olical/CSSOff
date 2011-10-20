@@ -1,6 +1,18 @@
-/* General classes */
+/* Backgrounds */
 .textured {
 	background: transparent url('assets/images/texture.png') repeat left top;
+}
+
+.blue {
+	background-color: #80C1D6;
+}
+
+.orange {
+	background-color: #FE6638;
+}
+
+.green {
+	background-color: #80B238;
 }
 
 /* Navigation */
