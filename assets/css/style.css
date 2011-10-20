@@ -1,3 +1,20 @@
+/* Fonts */
+@font-face {
+	font-family: 'KomikaTitle-PaintRegular';
+	src: url('../fonts/open-sans/KomikaTitle-Paint-webfont.eot');
+	src: url('../fonts/open-sans/KomikaTitle-Paint-webfont.eot?#iefix') format('embedded-opentype'), url('../fonts/open-sans/KomikaTitle-Paint-webfont.ttf') format('truetype');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'OpenSansSemibold';
+	src: url('../fonts/open-sans/OpenSans-Semibold-webfont.eot');
+	src: url('../fonts/open-sans/OpenSans-Semibold-webfont.eot?#iefix') format('embedded-opentype'), url('../fonts/open-sans/OpenSans-Semibold-webfont.ttf') format('truetype');
+	font-weight: normal;
+	font-style: normal;
+}
+
 /* Typeography */
 p, a {
 	font-family: 'OpenSansSemiBold', sans-serif;
@@ -94,21 +111,4 @@ header h1 {
 	-moz-opacity: 0.05;
 	-khtml-opacity: 0.05;
 	opacity: 0.05;
-}
-
-/* Fonts */
-@font-face {
-	font-family: 'KomikaTitle-PaintRegular';
-	src: url('../fonts/open-sans/KomikaTitle-Paint-webfont.eot');
-	src: url('../fonts/open-sans/KomikaTitle-Paint-webfont.eot?#iefix') format('embedded-opentype'), url('../fonts/open-sans/KomikaTitle-Paint-webfont.ttf') format('truetype');
-	font-weight: normal;
-	font-style: normal;
-}
-
-@font-face {
-	font-family: 'OpenSansSemibold';
-	src: url('../fonts/open-sans/OpenSans-Semibold-webfont.eot');
-	src: url('../fonts/open-sans/OpenSans-Semibold-webfont.eot?#iefix') format('embedded-opentype'), url('../fonts/open-sans/OpenSans-Semibold-webfont.ttf') format('truetype');
-	font-weight: normal;
-	font-style: normal;
 }
