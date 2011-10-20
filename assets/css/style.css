@@ -1,3 +1,8 @@
+/* General classes */
+.textured {
+	background: transparent url('assets/images/texture.png') repeat left top;
+}
+
 /* Navigation */
 nav li {
 	float: left;
