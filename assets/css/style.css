@@ -1,18 +1,19 @@
 /* Backgrounds */
-.textured {
-	background: transparent url('assets/images/texture.png') repeat left top;
+.background {
+	background-repeat: repeat;
+	background-position: left top;
 }
 
-.blue {
-	background-color: #80C1D6;
+.blue.background {
+	background: #80C1D6 url('../images/textures/blue.png');
 }
 
-.orange {
-	background-color: #FE6638;
+.orange.background {
+	background: #FE6638 url('../images/textures/orange.png');
 }
 
-.green {
-	background-color: #80B238;
+.green.background {
+	background: #80B238 url('../images/textures/green.png');
 }
 
 /* Fonts */
