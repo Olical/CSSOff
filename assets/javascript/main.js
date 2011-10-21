@@ -9,40 +9,23 @@
 		// Initialise variables
 		var scroll = new Fx.Scroll(window),
 			elements = {
-				navigation: {
-					obstacles: $('menu-obstacles'),
-					backToTop: $('menu-back-to-top')
-				},
-				sections: {
-					obstacles: $('obstacles')
-				},
+				navigation: $$('nav a'),
+				sections: $$('section.content'),
 				obstacles: $$('div.obstacle')
 			},
 			currentObstacle = elements.obstacles[0],
+			scroller = null,
 			spy = null,
 			coords = null,
 			revealers = [];
 		
 		// Set up the events to scroll
-		Object.each(elements.navigation, function(el) {
-			el.addEvent('click', function() {
-				// Make sure we have a hash
-				if(el.get('href') && el.get('href').length > 1) {
-					// Scroll to the target element
-					scroll.toElement(elements.sections[el.get('href').substring(1)]);
-				}
-				else {
-					// Scroll back to the top
-					scroll.toTop();
-				}
-
-				// Return false to stop it moving instantly
-				return false;
-			});
+		scroller = new Fx.SmoothScroll({
+			links: elements.navigation
 		});
 		
 		// Set up the scroll spy instances
-		Object.each(elements.sections, function(el, index) {
+		elements.sections.each(function(el, index) {
 			// Grab the elements coordinates
 			coords = el.getCoordinates();
 			
