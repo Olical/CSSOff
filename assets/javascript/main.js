@@ -15,8 +15,10 @@
 				},
 				sections: {
 					obstacles: $('obstacles')
-				}
+				},
+				obstacles: $$('div.obstacle')
 			},
+			currentObstacle = elements.obstacles[0],
 			spy = null,
 			coords = null;
 		
@@ -54,6 +56,18 @@
 					elements.navigation[index].removeClass('current');
 				}
 			});
+		});
+		
+		// Set up the obstacle events
+		elements.obstacles.addEvent('click', function() {
+			// Remove the class from the current element
+			currentObstacle.removeClass('current');
+			
+			// Set the new current element
+			currentObstacle = this;
+			
+			// Apply the class to this element
+			this.addClass('current');
 		});
 	}
 	
