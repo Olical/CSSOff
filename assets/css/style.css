@@ -184,10 +184,20 @@ div.obstacle {
 	position: relative;
 	text-align: center;
 	line-height: 195px;
+	cursor: pointer;
+	
+	-webkit-transition: background 300ms ease;
+	-moz-transition: background 300ms ease;
+	-o-transition: background 300ms ease;
+	transition: background 300ms ease;
 	
 	-webkit-border-radius: 6px;
 	-moz-border-radius: 6px;
 	border-radius: 6px;
+}
+
+div.obstacle:hover {
+	background-color: #729E32;
 }
 
 div.obstacle img {
