@@ -6,7 +6,27 @@
 	 * Run when the DOM is ready
 	 **/
 	function main() {
+		// Initialise variables
+		var scroll = new Fx.Scroll(window),
+			elements = {
+				navigation: $$('nav a')
+			};
 		
+		// Set up the events to scroll
+		elements.navigation.addEvent('click', function() {
+			// Make sure we have a hash
+			if(this.get('href') && this.get('href').length > 1) {
+				// Scroll to the target element
+				scroll.toElement($(this.get('href').substring(1)));
+			}
+			else {
+				// Scroll back to the top
+				scroll.toTop();
+			}
+			
+			// Return false to stop it moving instantly
+			return false;
+		});
 	}
 	
 	// Call the main function when the DOM is ready
