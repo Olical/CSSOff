@@ -200,6 +200,10 @@ div.obstacle:hover {
 	background-color: #729E32;
 }
 
+div.obstacle.current {
+	background: #EEF13F url('../images/textures/yellow.png');
+}
+
 div.obstacle img {
 	vertical-align: middle;
 }
