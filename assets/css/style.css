@@ -237,6 +237,8 @@ div.obstacle h3 {
 
 div.large-obstacle-container {
 	position: relative;
+	padding-top: 500px;
+	background: transparent url('../images/small-splat.png') no-repeat center top;
 }
 
 div.large-obstacle {
@@ -245,7 +247,6 @@ div.large-obstacle {
 	top: 0;
 	width: 100%;
 	text-align: center;
-	background: transparent url('../images/small-splat.png') no-repeat center top;
 	
 	-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
 	filter: alpha(opacity=0);
