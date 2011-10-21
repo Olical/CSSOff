@@ -68,11 +68,6 @@ h2 img {
 	filter: dropshadow(color=#CB522D, offx=5, offy=5);
 }
 
-/* Useful classes */
-.relative {
-	position: relative;
-}
-
 /* Navigation */
 nav {
 	width: 100%;
@@ -178,6 +173,7 @@ div.splat {
 .background {
 	background-repeat: repeat;
 	background-position: left top;
+	position: relative;
 }
 
 .blue.background {
@@ -200,6 +196,23 @@ div.splat {
 	-moz-opacity: 0.05;
 	-khtml-opacity: 0.05;
 	opacity: 0.05;
+}
+
+/* Borders */
+.border {
+	position: absolute;
+	left: 0;
+	height: 7px;
+	width: 100%;
+	background: rgba(0, 0, 0, 0.06);
+}
+
+.top.border {
+	top: 0;
+}
+
+.bottom.border {
+	bottom: 0;
 }
 
 /* Media queries */
