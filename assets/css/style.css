@@ -7,7 +7,6 @@ div.design-overlay {
 	width: 100%;
 	height: 4000px;
 	opacity: 0.2;
-	display: none;
 }
 
 /* Fonts */
@@ -45,6 +44,21 @@ strong {
 
 em {
 	font-style: italic;
+}
+
+h2 {
+	font-family: 'KomikaTitle-PaintRegular', sans-serif;
+	font-size: 39px;
+	color: #FFFFFF;
+	line-height: 42px;
+	padding-top: 45px;
+	padding-left: 15px;
+	letter-spacing: 2px;
+}
+
+.orange h2 {
+	text-shadow: 4px 4px 0px #CB522D;
+	filter: dropshadow(color=#CB522D, offx=5, offy=5);
 }
 
 /* Useful classes */
