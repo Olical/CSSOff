@@ -220,6 +220,22 @@ div.obstacle h3 {
 	line-height: 26px;
 }
 
+div.large-obstacle-container {
+	position: relative;
+}
+
+div.large-obstacle {
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 100%;
+	display: none;
+}
+
+div.large-obstacle.current {
+	display: block;
+}
+
 /* Backgrounds */
 .background {
 	background-repeat: repeat;
