@@ -42,13 +42,6 @@
 			});
 		});
 		
-		// Set up the revealers
-		elements.obstacles.each(function(el) {
-			el.set('reveal', {
-				revealOpacity: true
-			});
-		});
-		
 		// Set up the obstacle events
 		elements.obstacles.addEvent('click', function() {
 			// Only do this if it is a different element
