@@ -103,9 +103,9 @@ header img.logo {
 header h2 {
 	font-family: 'KomikaTitle-PaintRegular', sans-serif;
 	font-size: 51px;
-	line-height: 70px;
+	line-height: 69px;
 	color: #FE6537;
-	margin-top: 33px;
+	margin-top: 24px;
 	text-transform: uppercase;
 	letter-spacing: 2pt;
 	
@@ -117,7 +117,6 @@ header p {
 	font-size: 22px;
 	line-height: 28px;
 	padding-bottom: 80px;
-	padding-top: 9px;
 }
 
 div.splat {
