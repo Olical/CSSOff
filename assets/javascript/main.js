@@ -9,26 +9,51 @@
 		// Initialise variables
 		var scroll = new Fx.Scroll(window),
 			elements = {
-				navigation: $$('nav a'),
+				navigation: {
+					obstacles: $('menu-obstacles'),
+					backToTop: $('menu-back-to-top')
+				},
 				sections: {
 					obstacles: $('obstacles')
 				}
-			};
+			},
+			spy = null,
+			coords = null;
 		
 		// Set up the events to scroll
-		elements.navigation.addEvent('click', function() {
-			// Make sure we have a hash
-			if(this.get('href') && this.get('href').length > 1) {
-				// Scroll to the target element
-				scroll.toElement(elements.sections[this.get('href').substring(1)]);
-			}
-			else {
-				// Scroll back to the top
-				scroll.toTop();
-			}
+		Object.each(elements.navigation, function(el) {
+			el.addEvent('click', function() {
+				// Make sure we have a hash
+				if(el.get('href') && el.get('href').length > 1) {
+					// Scroll to the target element
+					scroll.toElement(elements.sections[el.get('href').substring(1)]);
+				}
+				else {
+					// Scroll back to the top
+					scroll.toTop();
+				}
+
+				// Return false to stop it moving instantly
+				return false;
+			});
+		});
+		
+		// Set up the scroll spy instances
+		Object.each(elements.sections, function(el, index) {
+			// Grab the elements coordinates
+			coords = el.getCoordinates();
 			
-			// Return false to stop it moving instantly
-			return false;
+			// Initialise the ScrollSpy instance
+			spy = new ScrollSpy({
+				min: coords.top,
+				max: coords.top + coords.height,
+				onEnter: function() {
+					elements.navigation[index].addClass('current');
+				},
+				onLeave: function() {
+					elements.navigation[index].removeClass('current');
+				}
+			});
 		});
 	}
 	
