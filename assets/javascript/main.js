@@ -9,7 +9,10 @@
 		// Initialise variables
 		var scroll = new Fx.Scroll(window),
 			elements = {
-				navigation: $$('nav a')
+				navigation: $$('nav a'),
+				sections: {
+					obstacles: $('obstacles')
+				}
 			};
 		
 		// Set up the events to scroll
@@ -17,7 +20,7 @@
 			// Make sure we have a hash
 			if(this.get('href') && this.get('href').length > 1) {
 				// Scroll to the target element
-				scroll.toElement($(this.get('href').substring(1)));
+				scroll.toElement(elements.sections[this.get('href').substring(1)]);
 			}
 			else {
 				// Scroll back to the top
