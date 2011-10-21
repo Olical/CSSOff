@@ -116,12 +116,13 @@ header img.logo {
 	max-width: 100%;
 }
 
-header h2 {
+header h1 {
 	font-family: 'KomikaTitle-PaintRegular', sans-serif;
 	font-size: 51px;
 	line-height: 69px;
 	color: #FE6537;
-	margin-top: 24px;
+	margin-top: 25px;
+	margin-bottom: 7px;
 	text-transform: uppercase;
 	letter-spacing: 2pt;
 	
