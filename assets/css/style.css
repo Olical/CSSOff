@@ -245,6 +245,7 @@ div.large-obstacle {
 	top: 0;
 	width: 100%;
 	text-align: center;
+	background: transparent url('../images/small-splat.png') no-repeat center top;
 	
 	-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
 	filter: alpha(opacity=0);
@@ -257,8 +258,9 @@ div.large-obstacle img {
 	max-width: 100%;
 }
 
-div.large-obstacle img.obstacle {
-	margin-top: 42px;
+div.large-obstacle div.tag {
+	height: 248px;
+	width: 100%;
 }
 
 div.large-obstacle.current {
