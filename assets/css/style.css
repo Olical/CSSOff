@@ -134,6 +134,7 @@ header p {
 	font-size: 22px;
 	line-height: 28px;
 	padding-bottom: 80px;
+	margin-bottom: 0;
 }
 
 div.splat {
