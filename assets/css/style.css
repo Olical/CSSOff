@@ -204,7 +204,13 @@ div.splat {
 	left: 0;
 	height: 7px;
 	width: 100%;
-	background: rgba(0, 0, 0, 0.06);
+	background-color: #000000;
+	
+	-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=6)";
+	filter: alpha(opacity=6);
+	-moz-opacity: 0.06;
+	-khtml-opacity: 0.06;
+	opacity: 0.06;
 }
 
 .top.border {
