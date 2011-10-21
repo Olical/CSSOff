@@ -50,10 +50,17 @@ h2 {
 	font-family: 'KomikaTitle-PaintRegular', sans-serif;
 	font-size: 39px;
 	color: #FFFFFF;
-	line-height: 42px;
-	padding-top: 45px;
+	line-height: 90px;
+	padding-top: 23px;
 	padding-left: 15px;
 	letter-spacing: 2px;
+	overflow: hidden;
+	height: 90px;
+}
+
+h2 img {
+	float: right;
+	margin-top: 27px;
 }
 
 .orange h2 {
