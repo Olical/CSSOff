@@ -177,6 +177,10 @@ div.splat {
 }
 
 /* Obstacles */
+section#obstacles {
+	padding-bottom: 70px;
+}
+
 div.obstacle {
 	background: #80B238 url('../images/textures/green.png') repeat top left;
 	height: 220px;
