@@ -120,10 +120,10 @@ nav a {
 	-moz-border-radius: 3px;
 	border-radius: 3px;
 	
-	-webkit-transition: background 300ms ease;
-	-moz-transition: background 300ms ease;
-	-o-transition: background 300ms ease;
-	transition: background 300ms ease;
+	-webkit-transition: background-color 300ms ease;
+	-moz-transition: background-color 300ms ease;
+	-o-transition: background-color 300ms ease;
+	transition: background-color 300ms ease;
 }
 
 nav a:hover, nav a.current {
@@ -195,10 +195,10 @@ div.obstacle {
 	line-height: 195px;
 	cursor: pointer;
 	
-	-webkit-transition: background 300ms ease;
-	-moz-transition: background 300ms ease;
-	-o-transition: background 300ms ease;
-	transition: background 300ms ease;
+	-webkit-transition: background-color 300ms ease;
+	-moz-transition: background-color 300ms ease;
+	-o-transition: background-color 300ms ease;
+	transition: background-color 300ms ease;
 	
 	-webkit-border-radius: 6px;
 	-moz-border-radius: 6px;
