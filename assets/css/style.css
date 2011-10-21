@@ -253,6 +253,10 @@ div.large-obstacle img {
 	max-width: 100%;
 }
 
+div.large-obstacle img.obstacle {
+	margin-top: 42px;
+}
+
 div.large-obstacle.current {
 	-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
 	filter: alpha(opacity=100);
