@@ -9,8 +9,13 @@
 		// Initialise variables
 		var elements = {
 				navigation: $$('nav a'),
-				currentNavigation: null
+				currentNavigation: document.getElement('nav a[href=' + document.location.hash + ']')
 			};
+		
+		// If there is a current navigation already, apply the class
+		if(elements.currentNavigation && elements.currentNavigation.get('href') !== '#') {
+			elements.currentNavigation.addClass('current');
+		}
 		
 		// Set up navigation
 		elements.navigation.each(function(el) {
