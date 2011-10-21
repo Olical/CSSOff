@@ -69,6 +69,12 @@ h2 img {
 	filter: dropshadow(color=#CB522D, offx=5, offy=5);
 }
 
+h3 {
+	font-family: 'KomikaTitle-PaintRegular', sans-serif;
+	font-size: 14px;
+	color: #FFFFFF;
+}
+
 /* Navigation */
 nav {
 	width: 100%;
@@ -175,10 +181,19 @@ div.obstacle {
 	background: #80B238 url('../images/textures/green.png') repeat top left;
 	height: 220px;
 	margin-bottom: 20px;
+	position: relative;
 	
 	-webkit-border-radius: 6px;
 	-moz-border-radius: 6px;
 	border-radius: 6px;
+}
+
+div.obstacle h3 {
+	text-align: center;
+	width: 100%;
+	position: absolute;
+	bottom: 0;
+	line-height: 26px;
 }
 
 /* Backgrounds */
