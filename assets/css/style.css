@@ -189,6 +189,7 @@ div.splat {
 /* All Mobile Sizes (devices and browser) */
 @media only screen and (max-width: 767px) {
 	nav {
+		/* Remove the fixed position on mobiles, they hate it, a lot! */
 		position: absolute;
 	}
 	
