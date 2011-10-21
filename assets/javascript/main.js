@@ -21,7 +21,8 @@
 		
 		// Set up the events to scroll
 		scroller = new Fx.SmoothScroll({
-			links: elements.navigation
+			links: elements.navigation,
+			axis: 'y'
 		});
 		
 		// Set up the scroll spy instances
