@@ -201,6 +201,13 @@ div.obstacle {
 	border-radius: 6px;
 }
 
+div.obstacle h3 {
+	-webkit-transition: color 300ms ease;
+	-moz-transition: color 300ms ease;
+	-o-transition: color 300ms ease;
+	transition: color 300ms ease;
+}
+
 div.obstacle:hover {
 	background-color: #729E32;
 }
