@@ -57,7 +57,7 @@
 				currentObstacle.removeClass('current');
 				
 				// Hide the current obstacle
-				$(currentObstacle.get('data-obstacle')).dissolve();
+				$(currentObstacle.get('data-obstacle')).fade('out');
 				
 				// Set the new current element
 				currentObstacle = this;
@@ -66,7 +66,7 @@
 				this.addClass('current');
 				
 				// Show the new obstacle
-				$(this.get('data-obstacle')).reveal();
+				$(this.get('data-obstacle')).fade('in');
 			}
 		});
 	}
