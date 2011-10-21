@@ -209,6 +209,10 @@ div.obstacle.current {
 	background: #EEF13F url('../images/textures/yellow.png');
 }
 
+div.obstacle.current h3 {
+	color: #F46034;
+}
+
 div.obstacle img {
 	vertical-align: middle;
 }
