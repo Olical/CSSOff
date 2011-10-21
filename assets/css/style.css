@@ -182,14 +182,19 @@ div.obstacle {
 	height: 220px;
 	margin-bottom: 20px;
 	position: relative;
+	text-align: center;
+	line-height: 197px;
 	
 	-webkit-border-radius: 6px;
 	-moz-border-radius: 6px;
 	border-radius: 6px;
 }
 
+div.obstacle img {
+	vertical-align: middle;
+}
+
 div.obstacle h3 {
-	text-align: center;
 	width: 100%;
 	position: absolute;
 	bottom: 0;
