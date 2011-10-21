@@ -240,12 +240,17 @@ div.large-obstacle {
 	left: 0;
 	top: 0;
 	width: 100%;
+	text-align: center;
 	
 	-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
 	filter: alpha(opacity=0);
 	-moz-opacity: 0;
 	-khtml-opacity: 0;
 	opacity: 0;
+}
+
+div.large-obstacle img {
+	max-width: 100%;
 }
 
 div.large-obstacle.current {
