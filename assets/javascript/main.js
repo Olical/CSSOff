@@ -11,13 +11,25 @@
 			elements = {
 				navigation: $$('nav a'),
 				sections: $$('section.content'),
-				obstacles: $$('div.obstacle')
+				obstacles: $$('div.obstacle'),
+				headings: $$('h2')
 			},
 			currentObstacle = elements.obstacles[0],
 			scroller = null,
 			spy = null,
 			coords = null,
-			revealers = [];
+			revealers = [],
+			checked = new Element('img', {
+				src: 'assets/images/checked.png'
+			}),
+			i = null;
+		
+		// Insert the 24 checker images into the h2 elements
+		elements.headings.each(function(el) {
+			for(i = 0; i < 24; i += 1) {
+				el.adopt(checked.clone());
+			}
+		});
 		
 		// Set up the events to scroll
 		scroller = new Fx.SmoothScroll({
