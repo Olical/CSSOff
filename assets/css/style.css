@@ -60,6 +60,10 @@ h2 {
 	margin-bottom: 36px;
 }
 
+h2 span {
+	padding-right: 25px;
+}
+
 h2 img {
 	float: right;
 	margin-top: 27px;
