@@ -341,6 +341,14 @@ div.large-obstacle.current {
 		margin: 0;
 	}
 	
+	h2 {
+		text-align: center;
+	}
+	
+	h2 img {
+		display: none;
+	}
+	
 	header {
 		padding-top: 120px;
 	}
