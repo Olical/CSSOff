@@ -20,7 +20,8 @@
 			},
 			currentObstacle = elements.obstacles[0],
 			spy = null,
-			coords = null;
+			coords = null,
+			revealers = [];
 		
 		// Set up the events to scroll
 		Object.each(elements.navigation, function(el) {
@@ -58,16 +59,32 @@
 			});
 		});
 		
+		// Set up the revealers
+		elements.obstacles.each(function(el) {
+			el.set('reveal', {
+				revealOpacity: true
+			});
+		});
+		
 		// Set up the obstacle events
 		elements.obstacles.addEvent('click', function() {
-			// Remove the class from the current element
-			currentObstacle.removeClass('current');
-			
-			// Set the new current element
-			currentObstacle = this;
-			
-			// Apply the class to this element
-			this.addClass('current');
+			// Only do this if it is a different element
+			if(currentObstacle !== this) {
+				// Remove the class from the current element
+				currentObstacle.removeClass('current');
+				
+				// Hide the current obstacle
+				$(currentObstacle.get('data-obstacle')).dissolve();
+				
+				// Set the new current element
+				currentObstacle = this;
+				
+				// Apply the class to this element
+				this.addClass('current');
+				
+				// Show the new obstacle
+				$(this.get('data-obstacle')).reveal();
+			}
 		});
 	}
 	
