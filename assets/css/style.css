@@ -276,6 +276,38 @@ div.large-obstacle.current {
 	opacity: 1;
 }
 
+/* Prizes */
+section#prizes h2 {
+	padding-top: 43px;
+	padding-left: 9px;
+}
+
+div.prize-container {
+	padding-top: 26px;
+	padding-bottom: 18px;
+}
+
+div.prize {
+	text-align: center;
+}
+
+div.prize h3 {
+	font-size: 16px;
+}
+
+div.prize img {
+	margin-bottom: 10px;
+	max-width: 100%;
+}
+
+div.large.prize {
+	margin-bottom: 100px;
+}
+
+div.small.prize {
+	margin-bottom: 53px;
+}
+
 /* Backgrounds */
 .background {
 	background-repeat: repeat;
