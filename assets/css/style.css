@@ -237,7 +237,7 @@ div.obstacle h3 {
 
 div.large-obstacle-container {
 	position: relative;
-	padding-top: 500px;
+	height: 720px;
 	background: transparent url('../images/small-splat.png') no-repeat center top;
 }
 
