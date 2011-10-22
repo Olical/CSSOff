@@ -45,7 +45,7 @@
 			// Initialise the ScrollSpy instance
 			spy = new ScrollSpy({
 				min: coords.top,
-				max: coords.top + coords.height,
+				max: coords.top + coords.height - 1,
 				onEnter: function() {
 					elements.navigation[index].addClass('current');
 				},
