@@ -74,6 +74,11 @@ h2 img {
 	filter: dropshadow(color=#CB522D, offx=5, offy=5);
 }
 
+.green h2 {
+	text-shadow: 4px 4px 0px #668E2D;
+	filter: dropshadow(color=#668E2D, offx=5, offy=5);
+}
+
 h3 {
 	font-family: 'KomikaTitle-PaintRegular', sans-serif;
 	font-size: 14px;
