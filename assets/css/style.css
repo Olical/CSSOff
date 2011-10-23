@@ -353,6 +353,35 @@ section#be-a-contestant h2 {
 	opacity: 0.05;
 }
 
+/* Inputs */
+input[type='text'] {
+	font-family: 'KomikaTitle-PaintRegular', sans-serif;
+	height: 50px;
+	width: 379px;
+	background: #FE6336 url('../images/textures/orange.png') repeat top left;
+	border: none;
+	color: #FFFFFF !important;
+	font-size: 16px;
+	padding: 0 14px;
+	
+	-webkit-transition: box-shadow 400ms ease;
+	-moz-transition: box-shadow 400ms ease;
+	-o-transition: box-shadow 400ms ease;
+	transition: box-shadow 400ms ease;
+	
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	border-radius: 5px;
+}
+
+input[type='text']:focus {
+	border: none;
+	
+	-webkit-box-shadow: 0px 0px 7px 0px rgba(0, 0, 0, 0.4);
+	-moz-box-shadow: 0px 0px 7px 0px rgba(0, 0, 0, 0.4);
+	box-shadow: 0px 0px 7px 0px rgba(0, 0, 0, 0.4);
+}
+
 /* Borders */
 .border {
 	position: absolute;
