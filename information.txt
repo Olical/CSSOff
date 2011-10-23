@@ -16,6 +16,7 @@ Notes:	All JavaScript is validated with JSHint (jshint.com)
 		 * MooTools
 		 * MooTools More (Fx.SmoothScroll and OverText)
 		 * ScrollSpy
+		 * mooSelecta
 		 * Skeleton
 		 * html5shim
 		 * pngfix
