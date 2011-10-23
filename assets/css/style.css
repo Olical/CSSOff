@@ -387,6 +387,8 @@ div.small.prize {
 	
 	h2 {
 		text-align: center;
+		overflow: visible;
+		line-height: 60px;
 	}
 	
 	h2 img {
