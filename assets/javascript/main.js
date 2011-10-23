@@ -28,7 +28,6 @@
 			coords = null,
 			revealers = [],
 			overtexts = [],
-			dropdowns = [],
 			checked = new Element('img', {
 				src: 'assets/images/checked.png'
 			}),
