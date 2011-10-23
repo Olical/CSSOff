@@ -377,6 +377,20 @@ select {
 	-webkit-appearance: none;
 }
 
+select.left {
+	width: 220px;
+	float: left;
+}
+
+select.right {
+	width: 140px;
+	float: right;
+}
+
+div.select-container {
+	width: 379px;
+}
+
 input[type='text']:focus {
 	border: none;
 	
