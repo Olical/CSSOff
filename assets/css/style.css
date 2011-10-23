@@ -313,6 +313,12 @@ div.small.prize {
 	margin-bottom: 53px;
 }
 
+/* Be a contestant */
+section#be-a-contestant h2 {
+	padding-top: 45px;
+	margin-bottom: 33px;
+}
+
 /* Backgrounds */
 .background {
 	background-repeat: repeat;
