@@ -8,6 +8,54 @@
 	'use strict';
 	
 	/**
+	 * Class for counting between numbers with an interval
+	 **/
+	var Clock = new Class({
+		Implements: [Options, Events],
+		options: {
+			from: null,
+			to: null,
+			step: 1,
+			interval: 1000
+		},
+		initialize: function(options) {
+			// If options are passed, set them
+			if(options) {
+				this.setOptions(options);
+			}
+		},
+		start: function() {
+			// Set up the current index
+			this.currentIndex = this.options.from;
+			
+			// Set up the interval to keep stepping
+			this.intervalId = setInterval(this.step.bind(this), this.options.interval);
+			
+			// Fire the start event
+			this.fireEvent('start');
+		},
+		step: function() {
+			// Apply the step to the current index
+			this.currentIndex += this.options.step;
+			
+			// Fire the step event and pass the current index
+			this.fireEvent('step', this.currentIndex);
+			
+			// If we have reached the to, then stop
+			if(this.currentIndex === this.options.to) {
+				this.stop();
+			}
+		},
+		stop: function() {
+			// Clear the interval
+			clearInterval(this.intervalId);
+			
+			// Fire the stop event
+			this.fireEvent('stop');
+		}
+	});
+	
+	/**
 	 * Main function for the page
 	 * Invokes all other methods
 	 * Run when the DOM is ready
@@ -20,7 +68,8 @@
 				sections: $$('section.content'),
 				obstacles: $$('div.obstacle'),
 				headings: $$('h2'),
-				textboxes: $$('input[type="text"]')
+				textboxes: $$('input[type="text"]'),
+				clock: $('clock-count')
 			},
 			currentObstacle = elements.obstacles[0],
 			scroller = null,
@@ -31,7 +80,21 @@
 			checked = new Element('img', {
 				src: 'assets/images/checked.png'
 			}),
-			i = null;
+			i = null,
+			clock = null;
+		
+		// Setup and start the clock
+		clock = new Clock({
+			from: 60,
+			to: 0,
+			step: -1,
+			onStep: function(count) {
+				// On step swap out the clock count
+				elements.clock.set('text', count);
+			}
+		});
+		
+		clock.start();
 		
 		// Add overlay text to the textboxes
 		elements.textboxes.each(function(el) {
