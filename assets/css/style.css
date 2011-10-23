@@ -371,6 +371,9 @@ input[type='text'], select {
 }
 
 select {
+	background-image: url('../images/dropdown.png'), url('../images/textures/orange.png');
+	background-repeat: no-repeat, repeat;
+	background-position: top right, top left;
 	-webkit-appearance: none;
 }
 
