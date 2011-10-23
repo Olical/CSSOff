@@ -27,12 +27,18 @@
 			coords = null,
 			revealers = [],
 			overtexts = [],
+			dropdowns = [],
 			checked = new Element('img', {
 				src: 'assets/images/checked.png'
 			}),
 			i = null;
 		
-		// Added overlay text to the textboxes
+		// Convert dropdowns to the nice HTML version
+		dropdowns.push(new mooSelecta({
+			selector: 'select'
+		}));
+		
+		// Add overlay text to the textboxes
 		elements.textboxes.each(function(el) {
 			overtexts.push(new OverText(el));
 		});
