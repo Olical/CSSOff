@@ -18,17 +18,24 @@
 				navigation: $$('nav a'),
 				sections: $$('section.content'),
 				obstacles: $$('div.obstacle'),
-				headings: $$('h2')
+				headings: $$('h2'),
+				textboxes: $$('input[type="text"]')
 			},
 			currentObstacle = elements.obstacles[0],
 			scroller = null,
 			spy = null,
 			coords = null,
 			revealers = [],
+			overtexts = [],
 			checked = new Element('img', {
 				src: 'assets/images/checked.png'
 			}),
 			i = null;
+		
+		// Added overlay text to the textboxes
+		elements.textboxes.each(function(el) {
+			overtexts.push(new OverText(el));
+		});
 		
 		// Insert the 24 checker images into the h2 elements
 		elements.headings.each(function(el) {
