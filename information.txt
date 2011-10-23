@@ -14,7 +14,7 @@ Notes:	All JavaScript is validated with JSHint (jshint.com)
 		A few things that are in use here:
 		
 		 * MooTools
-		 * MooTools More (Fx.SmoothScroll and OverText)
+		 * MooTools More (Fx.SmoothScroll, String.Extras and OverText)
 		 * ScrollSpy
 		 * Skeleton
 		 * html5shim
