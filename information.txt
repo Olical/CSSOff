@@ -7,3 +7,19 @@ Address: 	19 Ducketts Mead
 			SS4 3QS
 			United Kingdom
 Twitter: OliverCaldwell
+
+Notes:	All JavaScript is validated with JSHint (jshint.com)
+		And all HTML is validated with the W3 validator (validator.w3.org)
+		
+		A few things that are in use here:
+		
+		 * MooTools
+		 * MooTools More (Fx.SmoothScroll and OverText)
+		 * ScrollSpy
+		 * Skeleton
+		 * html5shim
+		 * pngfix
+		 * Respond.js
+		 * smush.it for optimising all images
+		 * Google Closure Compiler for minifying the 3rd party JavaScript
+		 * YUI compressor for minifying the 3rd party CSS
