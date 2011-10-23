@@ -1,5 +1,5 @@
 // JSHint options - jshint.com
-/*global Fx:true,Element:true,ScrollSpy:true*/
+/*global Fx:true,Element:true,ScrollSpy:true,OverText:true*/
 
 // Sandboxing wrapper
 (function($, $$) {
