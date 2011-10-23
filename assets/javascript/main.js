@@ -1,5 +1,6 @@
 // JSHint options - jshint.com
-/*global Fx:true,Element:true,ScrollSpy:true,OverText:true*/
+/*jshint mootools:true*/
+/*global ScrollSpy:true,OverText:true,mooSelecta:true*/
 
 // Sandboxing wrapper
 (function($, $$) {
