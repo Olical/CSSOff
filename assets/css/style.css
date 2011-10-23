@@ -416,6 +416,15 @@ label.overTxtLabel {
 	line-height: 45px !important;
 }
 
+img#submit-entry {
+	padding-right: 83px;
+	padding-top: 21px;
+}
+
+img#submit-entry:hover {
+	cursor: pointer;
+}
+
 /* Borders */
 .border {
 	position: absolute;
