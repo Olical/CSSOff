@@ -1,5 +1,11 @@
+// JSHint options - jshint.com
+/*global Fx:true,Element:true,ScrollSpy:true*/
+
 // Sandboxing wrapper
 (function($, $$) {
+	// Put the script into strict mode
+	'use strict';
+	
 	/**
 	 * Main function for the page
 	 * Invokes all other methods
