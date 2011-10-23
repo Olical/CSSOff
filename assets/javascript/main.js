@@ -1,6 +1,6 @@
 // JSHint options - jshint.com
 /*jshint mootools:true*/
-/*global ScrollSpy:true,OverText:true,mooSelecta:true*/
+/*global ScrollSpy:true,OverText:true*/
 
 // Sandboxing wrapper
 (function($, $$) {
@@ -33,11 +33,6 @@
 				src: 'assets/images/checked.png'
 			}),
 			i = null;
-		
-		// Convert dropdowns to the nice HTML version
-		dropdowns.push(new mooSelecta({
-			selector: 'select'
-		}));
 		
 		// Add overlay text to the textboxes
 		elements.textboxes.each(function(el) {
