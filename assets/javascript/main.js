@@ -90,7 +90,7 @@
 			step: -1,
 			onStep: function(count) {
 				// On step swap out the clock count
-				elements.clock.set('text', count);
+				elements.clock.set('text', count.toString().pad(2, '0', 'left'));
 			}
 		});
 		
