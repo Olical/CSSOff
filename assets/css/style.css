@@ -103,6 +103,14 @@ h3.strong {
 	line-height: 50px;
 }
 
+/* Useful styles */
+div.keyline {
+	background: #74B3C6;
+	background: rgba(23, 52, 61, 0.1);
+	height: 7px;
+	margin: 65px 0;
+}
+
 /* Navigation */
 nav {
 	width: 100%;
@@ -339,6 +347,7 @@ section#be-a-contestant h2 {
 
 div.clock-container {
 	text-align: center;
+	padding-bottom: 80px;
 }
 
 div.clock {
