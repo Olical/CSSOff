@@ -102,6 +102,15 @@ div.keyline {
 	background: rgba(23, 52, 61, 0.1);
 	height: 7px;
 	margin: 65px 0;
+	position: relative;
+}
+
+div.keyline img.kn-logo {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	margin-left: -67px;
+	margin-top: -42px;
 }
 
 /* Navigation */
