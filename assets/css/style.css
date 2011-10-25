@@ -101,7 +101,8 @@ div.keyline {
 	background: #74B3C6;
 	background: rgba(23, 52, 61, 0.1);
 	height: 7px;
-	margin: 65px 0;
+	margin-top: 92px;
+	margin-bottom: 60px;
 	position: relative;
 }
 
@@ -114,8 +115,8 @@ div.keyline img.kn-logo {
 	position: absolute;
 	top: 50%;
 	left: 50%;
-	margin-left: -67px;
-	margin-top: -42px;
+	margin-left: -80px;
+	margin-top: -39px;
 }
 
 /* Navigation */
@@ -379,14 +380,21 @@ div.credits {
 	text-align: center;
 }
 
+div.credits img {
+	margin: 0;
+	padding: 0;
+}
+
 div.credits p {
 	font-size: 20px;
 	line-height: 24px;
+	margin-bottom: 10px;
 }
 
 div.credits p.small {
 	font-size: 14px;
 	line-height: 18px;
+	margin-bottom: 26px;
 }
 
 div.credits div.left {
@@ -395,6 +403,10 @@ div.credits div.left {
 
 div.credits div.right {
 	text-align: left;
+}
+
+div.credits a.copy {
+	margin-right: 45px;
 }
 
 /* Backgrounds */
