@@ -13,13 +13,13 @@ Notes:	All JavaScript is validated with JSHint (jshint.com)
 		
 		A few things that are in use here:
 		
-		 * MooTools
-		 * MooTools More (Fx.SmoothScroll, String.Extras and OverText)
-		 * ScrollSpy
-		 * Skeleton
-		 * html5shim
-		 * pngfix
-		 * Respond.js
-		 * smush.it for optimising all images
-		 * Google Closure Compiler for minifying the 3rd party JavaScript
-		 * YUI compressor for minifying the 3rd party CSS
+		 * MooTools - My JavaScript framework of choice
+		 * MooTools More (Fx.SmoothScroll, String.Extras and OverText) - Extra effects
+		 * ScrollSpy - Event based scrolling for highlighting the menu as you scroll
+		 * Skeleton - Responsive CSS grid system. Allows the whole site to restructure on mobile
+		 * html5shim - Enables HTML5 tags in older Internet Explorer versions
+		 * pngfix - Enables transparent PNG images in IE6 and below
+		 * Respond.js - Enables media queries for the responsive grid in IE8 and below
+		 * smush.it - Used for optimising all images, and I mean /all/ of them
+		 * Google Closure Compiler - Used for minifying the 3rd party JavaScript
+		 * YUI compressor - Used for minifying the 3rd party CSS
