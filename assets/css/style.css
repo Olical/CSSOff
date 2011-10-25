@@ -105,6 +105,11 @@ div.keyline {
 	position: relative;
 }
 
+div.tight.keyline {
+	margin-top: 7px;
+	margin-bottom: 22px;
+}
+
 div.keyline img.kn-logo {
 	position: absolute;
 	top: 50%;
@@ -367,6 +372,29 @@ div.clock span {
 	
 	text-shadow: 11px 11px 0px #000000;
 	filter: dropshadow(color=#000000, offx=11, offy=11);
+}
+
+/* Credits */
+div.credits {
+	text-align: center;
+}
+
+div.credits p {
+	font-size: 20px;
+	line-height: 24px;
+}
+
+div.credits p.small {
+	font-size: 14px;
+	line-height: 18px;
+}
+
+div.credits div.left {
+	text-align: right;
+}
+
+div.credits div.right {
+	text-align: left;
 }
 
 /* Backgrounds */
