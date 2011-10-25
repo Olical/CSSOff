@@ -558,6 +558,18 @@ img#submit-entry:hover {
 	nav li#back-to-top {
 		display: none;
 	}
+	
+	div.credits div.left, div.credits div.right {
+		text-align: center;
+	}
+	
+	div.credits br {
+		display: none;
+	}
+	
+	div.clock-container {
+		padding-top: 50px;
+	}
 }
 
 /* Mobile Landscape Size to Tablet Portrait (devices and browsers) */
