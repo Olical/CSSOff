@@ -73,7 +73,7 @@
 				selects: $$('select'),
 				submit: $('submit-entry'),
 				loadingOverlay: $$('div.form div.loading-overlay')[0],
-				formAlert: $('form-alert')
+				formError: $('form-error')
 			},
 			currentObstacle = elements.obstacles[0],
 			scroller = null,
@@ -113,7 +113,7 @@
 			}
 			else {
 				// Otherwise, show the alert
-				elements.formAlert.setStyle('display', 'block');
+				elements.formError.setStyle('display', 'block');
 			}
 		});
 		
