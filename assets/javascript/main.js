@@ -70,7 +70,10 @@
 				headings: $$('h2'),
 				textboxes: $$('input[type="text"]'),
 				clock: $('clock-count'),
-				selects: $$('select')
+				selects: $$('select'),
+				submit: $('submit-entry'),
+				loadingOverlay: $$('div.form div.loading-overlay')[0],
+				formAlert: $('form-alert')
 			},
 			currentObstacle = elements.obstacles[0],
 			scroller = null,
@@ -84,6 +87,35 @@
 			}),
 			i = null,
 			clock = null;
+		
+		// Add the code to fake sending the form on submit
+		elements.submit.addEvent('click', function() {
+			var selects = $$('div.select'),
+				valid = 0,
+				check = elements.textboxes.length + selects.length;
+			
+			// Validate the form
+			elements.textboxes.each(function(el) {
+				if(el.get('value').length > 0) {
+					valid += 1;
+				}
+			});
+			
+			valid += $$('div.select li.clicked').length;
+			
+			// If all are valid, begin post
+			if(valid === check) {
+				// Fade in the loading overlay
+				elements.loadingOverlay.setStyles({
+					display: 'block',
+					opacity: 0
+				}).fade('in');
+			}
+			else {
+				// Otherwise, show the alert
+				elements.formAlert.setStyle('display', 'block');
+			}
+		});
 		
 		// Convert the select elements into HTML
 		elements.selects.each(function(el) {
