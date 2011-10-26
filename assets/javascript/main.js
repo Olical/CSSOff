@@ -69,7 +69,8 @@
 				obstacles: $$('div.obstacle'),
 				headings: $$('h2'),
 				textboxes: $$('input[type="text"]'),
-				clock: $('clock-count')
+				clock: $('clock-count'),
+				selects: $$('select')
 			},
 			currentObstacle = elements.obstacles[0],
 			scroller = null,
@@ -77,11 +78,17 @@
 			coords = null,
 			revealers = [],
 			overtexts = [],
+			selects = [],
 			checked = new Element('img', {
 				src: 'assets/images/checked.png'
 			}),
 			i = null,
 			clock = null;
+		
+		// Convert the select elements into HTML
+		elements.selects.each(function(el) {
+			selects.push();
+		});
 		
 		// Setup and start the clock
 		clock = new Clock({
