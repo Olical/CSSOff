@@ -535,6 +535,31 @@ input[type='text'], label.overTxtLabel, div.select a, div.select ul li {
 
 div.form {
 	text-align: center;
+	position: relative;
+}
+
+div.form div.loading-overlay {
+	position: absolute;
+	top: -5px;
+	left: -5px;
+	padding-bottom: 5px;
+	width: 389px;
+	height: 100%;
+	background: #FFFFFF;
+	background: rgba(255, 255, 255, 0.7);
+	display: none;
+	
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	border-radius: 5px;
+}
+
+div.form div.loading-overlay img {
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	margin-top: -25px;
+	margin-left: -25px;
 }
 
 label.overTxtLabel {
