@@ -554,7 +554,7 @@ div.form div.loading-overlay {
 	border-radius: 5px;
 }
 
-p#form-error {
+p.alert {
 	width: 351px;
 	padding: 14px;
 	font-size: 16px;
