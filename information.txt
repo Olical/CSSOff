@@ -16,7 +16,7 @@ Notes:	All JavaScript is validated with JSHint (jshint.com)
 		 * MooTools - My JavaScript framework of choice
 		 * MooTools More (Fx.SmoothScroll, String.Extras and OverText) - Extra effects
 		 * ScrollSpy - Event based scrolling for highlighting the menu as you scroll
-		 * elSelect - Converting the select elements into styleable HTML
+		 * StyleSelect - Converting the select elements into styleable HTML
 		 * Skeleton - Responsive CSS grid system. Allows the whole site to restructure on mobile
 		 * html5shim - Enables HTML5 tags in older Internet Explorer versions
 		 * pngfix - Enables transparent PNG images in IE6 and below
