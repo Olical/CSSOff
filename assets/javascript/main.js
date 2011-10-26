@@ -87,7 +87,11 @@
 		
 		// Convert the select elements into HTML
 		elements.selects.each(function(el) {
-			selects.push();
+			selects.push(new StyleSelect({
+				element: el,
+				skipfirst: true,
+				size: 0
+			}));
 		});
 		
 		// Setup and start the clock
