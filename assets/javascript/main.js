@@ -73,7 +73,9 @@
 				selects: $$('select'),
 				submit: $('submit-entry'),
 				loadingOverlay: $$('div.form div.loading-overlay')[0],
-				formError: $('form-error')
+				formError: $('form-error'),
+				formSuccess: $('form-success'),
+				spinner: $('spinner')
 			},
 			currentObstacle = elements.obstacles[0],
 			scroller = null,
@@ -110,6 +112,12 @@
 					display: 'block',
 					opacity: 0
 				}).fade('in');
+				
+				// Wait a second, then show the success message
+				setTimeout(function() {
+					elements.spinner.setStyle('display', 'none');
+					elements.formSuccess.setStyle('display', 'block');
+				}, 1500 + Number.random(0, 500));
 			}
 			else {
 				// Otherwise, show the alert

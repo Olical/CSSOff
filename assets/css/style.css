@@ -561,6 +561,12 @@ p.alert {
 	display: none;
 }
 
+p#form-success {
+	font-size: 20px;
+	color: #000000;
+	margin-top: 80px;
+}
+
 div.form div.loading-overlay img {
 	position: absolute;
 	left: 50%;
