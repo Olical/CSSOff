@@ -90,7 +90,8 @@
 			selects.push(new StyleSelect({
 				element: el,
 				skipfirst: true,
-				size: 0
+				size: 0,
+				cssClass: 'select'
 			}));
 		});
 		
