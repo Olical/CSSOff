@@ -456,14 +456,18 @@ input[type='text'], div.select {
 }
 
 div.select {
-	background-image: url('../images/dropdown.png'), url('../images/textures/orange.png');
-	background-repeat: no-repeat, repeat;
-	background-position: top right, top left;
-	-webkit-appearance: none;
+	background: #FE6336 url('../images/textures/orange.png') repeat top left;
 	position: relative;
 	height: 50px !important;
 	text-align: left;
 	cursor: pointer;
+}
+
+div.select a {
+	background: transparent url('../images/dropdown.png') no-repeat top right;
+	height: 50px;
+	width: 200px;
+	display: block;
 }
 
 div.select.left {
@@ -471,9 +475,17 @@ div.select.left {
 	float: left;
 }
 
+div.select.left a {
+	width: 192px;
+}
+
 div.select.right {
 	width: 140px !important;
 	float: right;
+}
+
+div.select.right a {
+	width: 112px;
 }
 
 div.select ul {
