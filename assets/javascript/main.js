@@ -75,7 +75,8 @@
 				loadingOverlay: $$('div.form div.loading-overlay')[0],
 				formError: $('form-error'),
 				formSuccess: $('form-success'),
-				spinner: $('spinner')
+				spinner: $('spinner'),
+				legacyMessage: $('legacy-message')
 			},
 			currentObstacle = elements.obstacles[0],
 			scroller = null,
@@ -126,14 +127,23 @@
 		});
 		
 		// Convert the select elements into HTML
-		elements.selects.each(function(el) {
-			selects.push(new StyleSelect({
-				element: el,
-				skipfirst: true,
-				size: 0,
-				cssClass: 'select'
-			}));
-		});
+		try {
+			elements.selects.each(function(el) {
+				selects.push(new StyleSelect({
+					element: el,
+					skipfirst: true,
+					size: 0,
+					cssClass: 'select'
+				}));
+			});
+		}
+		catch (e) {
+			// This try catch stops an error IE < 8
+			// It is in the StyleSelect script
+			// I have no idea where
+			// So we know we are in a old browser now, show a message
+			elements.legacyMessage.setStyle('display', 'block');
+		}
 		
 		// Setup and start the clock
 		clock = new Clock({

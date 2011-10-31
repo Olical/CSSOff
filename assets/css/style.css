@@ -171,6 +171,20 @@ nav a:hover, nav a.current {
 	background: rgba(0, 0, 0, 0.2);
 }
 
+/* Legacy message for older browsers */
+div#legacy-message {
+	width: 100%;
+	padding-top: 50px;
+	padding-bottom: 10px;
+	background-color: #222222;
+	color: #FFFFFF;
+	text-align: center;
+}
+
+div#legacy-message p, div#legacy-message a, div#legacy-message a:visited {
+	font-size: 14px;
+}
+
 /* Header */
 header {
 	padding-top: 72px;
