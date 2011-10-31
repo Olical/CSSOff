@@ -694,7 +694,12 @@ img#submit-entry:hover {
 
 /* Mobile Portrait Size to Mobile Landscape Size (devices and browsers) */
 @media only screen and (max-width: 479px) {
-	select.left, select.right {
+	div.select.left, div.select.right {
 		float: none;
+		width: 328px !important;
+	}
+	
+	div.select a {
+		width: 300px !important;
 	}
 }
