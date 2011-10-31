@@ -127,7 +127,13 @@
 		});
 		
 		// Convert the select elements into HTML
-		try {
+		// We only do this if we are not in an older IE browser
+		Browser.ie6 || Browser.ie7
+		if(Browser.ie && Browser.version < 8) {
+			// It is an old IE, show the legacy message
+			elements.legacyMessage.setStyle('display', 'block');
+		}
+		else {
 			elements.selects.each(function(el) {
 				selects.push(new StyleSelect({
 					element: el,
@@ -136,13 +142,6 @@
 					cssClass: 'select'
 				}));
 			});
-		}
-		catch (e) {
-			// This try catch stops an error IE < 8
-			// It is in the StyleSelect script
-			// I have no idea where
-			// So we know we are in a old browser now, show a message
-			elements.legacyMessage.setStyle('display', 'block');
 		}
 		
 		// Setup and start the clock
