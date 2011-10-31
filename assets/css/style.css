@@ -179,6 +179,7 @@ div#legacy-message {
 	background-color: #222222;
 	color: #FFFFFF;
 	text-align: center;
+	display: none;
 }
 
 div#legacy-message p, div#legacy-message a, div#legacy-message a:visited {
