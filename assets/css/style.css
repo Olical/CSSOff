@@ -2,7 +2,8 @@
 @font-face {
 	font-family: 'KomikaTitle-PaintRegular';
 	src:	url('../fonts/komikatitle-paint-webfont.eot');
-	src:	url('../fonts/komikatitle-paint-webfont.eot?#iefix') format('embedded-opentype'),
+	src:	local('☺'),
+			url('../fonts/komikatitle-paint-webfont.eot?#iefix') format('embedded-opentype'),
 			url('../fonts/komikatitle-paint-webfont.woff') format('woff'),
 			url('../fonts/komikatitle-paint-webfont.ttf') format('truetype'),
 			url('../fonts/komikatitle-paint-webfont.svg#KomikaTitle-PaintRegular') format('svg');
@@ -13,7 +14,8 @@
 @font-face {
 	font-family: 'DigitaldreamFatRegular';
 	src:	url('../fonts/digitaldreamfat-webfont.eot');
-	src:	url('../fonts/digitaldreamfat-webfont.eot?#iefix') format('embedded-opentype'),
+	src:	local('☺'),
+			url('../fonts/digitaldreamfat-webfont.eot?#iefix') format('embedded-opentype'),
 			url('../fonts/digitaldreamfat-webfont.woff') format('woff'),
 			url('../fonts/digitaldreamfat-webfont.ttf') format('truetype'),
 			url('../fonts/digitaldreamfat-webfont.svg#DigitaldreamFatRegular') format('svg');
